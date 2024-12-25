@@ -1,9 +1,7 @@
-//your JS code here. If required.
 let line = document.getElementById("line");
 
 let angle = 0;
 setInterval(() => {
   angle += 2;
-	line.style.position = 'absolute'
-  line.style.transform = `rotate(${angle}deg)`;
+  line.style.cssText = `background-color: black; width: 200px; height: 2px;position: absolute;top: 50%;left: 50%; transform: rotate(${angle}deg)`;
 }, 20);
